@@ -1,0 +1,88 @@
+.clearsmallimg {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.cleardes {
+    display: inline-block;
+    max-height: 500px;
+    overflow: hidden;
+    color: black;
+}
+
+.trborder {
+    width: 100%;
+    height: 3px;
+    padding: 0px 20px;
+}
+
+.trborder td {
+    background-color: #b2d1ff;
+    border-right: 2px solid #fff;
+    height: 3px;
+}
+
+.trborder_bottom {
+    width: 100%;
+    height: 3px;
+}
+
+.trborder_bottom td {
+    background-color: #b2d1ff;
+    height: 3px;
+}
+
+.clearcount {
+    color: red;
+    font-size: 16px;
+}
+
+.prouserinf {
+    width: auto;
+    height: auto;
+    margin: 5%;
+    border: 1px solid gray;
+}
+
+.prouserinfitem {
+    margin: 20px 25px;
+    height: 25px;
+}
+
+.infspan {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+}
+.subox{
+    text-align: right;
+}
+
+.countprice{
+    display: block;
+    padding: 5px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+.lastprice{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lstdiv{
+    padding: 10px 20px;
+}
+
+.subbtn{
+    width: 200px;
+    height: 45px;
+}
+
+.clearprotr{
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,51 @@
+div.search{
+    position: absolute;
+    top: 6%;
+    left: 41%;
+    width: 240px;
+}
+.searchbox{
+    height: 34px;
+    width: 200px;
+    float: left;
+}
+
+.searchinf{
+    height:30px;
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 28%;
+    float: left;
+}
+
+.div-srcoll{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    z-index: 1000;
+    background:  rgba(0, 86, 162, 0.28);
+    display: none;
+    opacity: 1;
+}
+
+.search-scroll{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    width: 350px;
+    margin-left: 35%;
+}
+
+.searchbox-scroll{
+    height: 30px;
+    width: 280px;
+    float: left;
+}
+
+.searchbtn-scroll{
+    height: 30px;
+    width: 60px;
+}

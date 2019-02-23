@@ -1,0 +1,365 @@
+.pinfbox {
+    border: 1px solid gray;
+    margin: 0px 20px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #c1c1c1;
+}
+
+.uinf {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.uinf_name {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.uinf_name_a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.uinf_pas {
+    text-align: right;
+}
+
+.uinf_pas_a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    color: gray;
+}
+
+.pbase {
+    width: 25%;
+    border-right: 1px dotted gray;
+    float: left;
+    text-align: center;
+}
+
+.pbase_a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.otypebox {
+    height: 30px;
+}
+
+.editpas {
+    width: 450px;
+    height: 380px;
+    background-color: #909090;
+    margin: 35px 20%;
+    border-radius: 8px;
+    display: none;
+}
+
+.edaccount {
+    padding-top: 30px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.editcontent {
+    margin: 0% 28%;
+}
+
+.edcode {
+    margin-top: 10px;
+}
+
+.edcodein {
+    display: block;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.edcodebtn {
+    width: 60px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.ypass {
+    height: 35px;
+    border-radius: 5px;
+}
+
+.edbtn {
+    text-align: right;
+    margin: 5px 18px;
+;
+}
+
+.editall {
+    height: 300px;
+    width: 500px;
+    background-color: #909090;
+    border-radius: 8px;
+    margin: 35px 16%;
+    text-align: center;
+    display: none;
+}
+
+.edtable {
+    text-align: left;
+    width: 80%;
+    height: 80%;
+    margin: 0% 20%;
+    padding-top: 10%;
+    color: black;
+    font-size: 15px;
+}
+
+.edtable_td {
+    padding: 10px;
+}
+
+.edtable a {
+    color: black;
+    font-size: 16px;
+}
+
+.favrow {
+    text-align: center;
+    padding: 0%;
+    display: none;
+}
+
+.favit {
+    margin: 5px 10px;
+    padding: 0px;
+}
+
+.favbox {
+    border: 1px solid gray;
+}
+
+.favimg {
+    width: 100%;
+    height: 120px;
+    padding: 3px;
+}
+
+.favtit {
+    display: block;
+    max-width: 115px;
+    overflow: hidden;
+    padding: 0px 2px;
+}
+
+.favpro {
+    color: red;
+    font-size: 15px;
+}
+
+.favori {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.ortr {
+    background-color: gray;
+    text-align: center;
+}
+
+.orders {
+    width: 100%;
+}
+
+.orders th {
+    padding: 5px;
+    text-align: center;
+}
+
+.oritab {
+    width: 99%;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    /*margin: 20px 3px;*/
+}
+
+.oritab th {
+    padding: 5px;
+}
+
+.oriit {}
+
+.oriit td{
+    border: 1px solid gray;
+}
+
+.oritr {
+    background-color: #99b0c7;
+    color: black;
+    font-size: 15px;
+}
+
+.oridel {
+    color: black;
+    text-align: center;
+}
+
+.orimg {
+    width: 95px;
+    height: 100px;
+}
+
+.tablist {
+    margin: 15px 0px;
+}
+
+.tabori {
+    /*border: 1px solid gray;*/
+}
+
+.tabori_span {
+    padding: 10px;
+    display: inline-block;
+    max-width: 250px;
+    /*word-wrap: break-word;*/
+    white-space: normal;
+    word-break: break-all;
+    font-size: 13px;
+}
+
+.oripr {
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.orinu {
+    width: 100%;
+    /*height: 102px;
+    border: 1px solid gray;*/
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    text-align: center;
+    padding: 44%;
+}
+
+.oricut {
+    /*height: 102px;
+    border: 1px solid gray;*/
+    padding-top: 0px;
+    padding-left: 8px;
+    border-right: 1px solid transparent;
+}
+
+.oriop {
+    /*height: 102px;
+    border: 1px solid gray;*/
+    padding-top: 0px;
+    padding-left: 30px;
+
+    /*border-right: 1px solid gray;*/
+}
+
+.oribot {
+    height: 30px;
+    background-color: #99b0c7;
+    font-size: 15px;
+}
+.oribot span{
+    color: #d00;
+}
+
+.ordes {
+    margin-top: 15px;
+}
+
+.ordertype {
+    height: 30px;
+}
+
+.ordertype a {
+    border-right: 1px solid #7b7b7b;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+
+.orderactive {
+    border-bottom: 2px solid red !important;
+    color: red !important;
+}
+
+.typelast {
+    border-bottom: 1px solid gray;
+    height: 33px;
+}
+
+.allorders {
+    display: none;
+    padding: 0%;
+}
+
+span.error {
+    height: 15px;
+    width: 15px;
+    background: url("../images/unchecked.gif") no-repeat 0px 0px;
+    padding-left: 15px;
+}
+
+span.success {
+    height: 15px;
+    width: 15px;
+    background: url("../images/checked.gif") no-repeat 0px 0px;
+    padding-left: 15px;
+}
+
+
+.tooltip-inner {
+    max-width: 400px !important;
+    background-color: #656565; //修改背景色
+color: red !important; //字体颜色
+text-align: left;
+
+}
+
+.tooltip {
+    opacity: 1 !important; //让整个tooltip不透明
+}
+
+.upay{
+    display: none;
+}
+
+.usend{
+    display: none;
+}
+
+.urec{
+    display: none;
+}
+
+.urevi{
+    display: none;
+}
+
+.topay{}
+
+.tosend{}
+
+.toreceive{}
+
+.toreview{}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <package name="mpackage" namespace="/" extends="struts-default,json-default">
+
+        <!--登录  -->
+        <action name="loginAction" class="org.dog.action.LoginAction">
+            <result name="success">/index.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+
+        <!--登出  -->
+        <action name="logoutAction" class="org.dog.action.LogoutAction">
+            <result name="success">/index.jsp</result>
+        </action>
+
+        <!--检查用户名是否重复，用于注册  -->
+        <action name="checkUsernameAction" class="org.dog.action.CheckUsernameAction">
+            <result type="json">
+                <param name="root">map</param>
+            </result>
+        </action>
+
+        <!--注册  -->
+        <action name="registerAction" class="org.dog.action.RegisterAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--发送验证码  -->
+        <action name="codeAction" class="org.dog.action.SecurityCodeAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--初始化主界面  -->
+        <action name="initAction" class="org.dog.action.InitAction">
+            <result name="success">/index.jsp</result>
+        </action>
+
+        <!-- 用于搜索框的查询 -->
+        <action name="searchAction" class="org.dog.action.SearchAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--根据分类显示商品信息 -->
+        <action name="categorySearchAction" class="org.dog.action.CategorySearchAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--通过品牌名搜索 -->
+        <action name="searchByPropertyValueAction" class="org.dog.action.SearchByPropertyValueAction">
+            <result name="success">WEB-INF/content/propinquirePage.jsp</result>
+        </action>
+
+        <!--通过商品名搜索 -->
+        <action name="searchByProductNameAction" class="org.dog.action.SearchByProductNameAction">
+            <result name="success">WEB-INF/content/propinquirePage.jsp</result>
+        </action>
+
+        <!--通过商品id搜索 -->
+        <action name="searchByIdAction" class="org.dog.action.SearchByIdAction">
+            <result name="success">WEB-INF/content/productDetail.jsp</result>
+        </action>
+
+        <!--反馈 -->
+        <action name="addFeedBackAction" class="org.dog.action.AddFeedBackAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--忘记密码 -->
+        <action name="forgetPasswordAction" class="org.dog.action.ForgetPasswordAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--验证码 -->
+        <action name="seCodeToUpAction" class="org.dog.action.SeCodeToUpAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--通过分类名查询 -->
+        <action name="searchByCategoryAction" class="org.dog.action.SearchByCategoryAction">
+            <result name="success">WEB-INF/content/categoryinquirePage.jsp</result>
+        </action>
+
+        <!--根据分类名查询 -->
+        <action name="searchByCategoryByPageAction" class="org.dog.action.SearchByCategoryByPageAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--跳转到查询界面 -->
+        <action name="toSearchAction" class="org.dog.action.ToSearchAction">
+            <result name="success">WEB-INF/content/inquirePage.jsp</result>
+        </action>
+
+    </package>
+
+    <package name="mpackagetointe" namespace="/" extends="struts-default,json-default">
+        <!--在跳转到购物车，我的收藏，个人中心时需判断用户是否登录  -->
+        <interceptors>
+            <interceptor name="loginInterceptor" class="org.dog.interceptor.LoginInterceptor"/>
+            <interceptor-stack name="mdefaultStack">
+                <interceptor-ref name="loginInterceptor"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="mdefaultStack"/>
+
+        <global-results>
+            <result name="login">/login.jsp</result>
+        </global-results>
+
+        <!--跳转到购物车  -->
+        <action name="shopCartAction" class="org.dog.action.ShopCartAction">
+            <result name="success">WEB-INF/content/shopCart.jsp</result>
+        </action>
+
+        <!--跳转到我的收藏  -->
+        <action name="favoriteAction" class="org.dog.action.FavoriteAction">
+            <result name="success">WEB-INF/content/favorite.jsp</result>
+        </action>
+
+        <!--跳转到个人中心  -->
+        <action name="personInfAction" class="org.dog.action.PersonInfAction">
+            <result name="success">WEB-INF/content/personInf.jsp</result>
+        </action>
+
+        <!--加入购物车 -->
+        <action name="addToShopCartAction" class="org.dog.action.AddToShopCartAction">
+            <result name="success">WEB-INF/content/shopCart.jsp</result>
+        </action>
+
+        <!--更新购物车 -->
+        <action name="updateShopCartAction" class="org.dog.action.UpdateShopCartAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--确认订单 -->
+        <action name="clearShopCartAction" class="org.dog.action.ClearShopCartAction">
+            <result name="success">WEB-INF/content/clearShopCart.jsp</result>
+        </action>
+
+        <!--生成订单 -->
+        <action name="createOrderAction" class="org.dog.action.CreateOrderAction">
+            <result name="success">WEB-INF/content/pay.jsp</result>
+        </action>
+
+        <!--修改用户 -->
+        <action name="updateUserAction" class="org.dog.action.UpdateUserAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--修改密码 -->
+        <action name="updatePasswordAction" class="org.dog.action.UpdatePasswordAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--删除订单 -->
+        <action name="deleteOrderAction" class="org.dog.action.DeleteOrderAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--获得收藏 -->
+        <action name="getFavorByPageAction" class="org.dog.action.GetFavorByPageAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--添加或删除搜藏 -->
+        <action name="changeFavorAction" class="org.dog.action.ChangeFavorAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--更新订单状态 -->
+        <action name="updateOrderAction" class="org.dog.action.UpdateOrderAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <!--添加评论 -->
+        <action name="addReviewAction" class="org.dog.action.AddReviewAction">
+            <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+    </package>
+
+
+</struts>

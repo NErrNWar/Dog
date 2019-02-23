@@ -1,0 +1,23 @@
+div.head {
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    width: 80%;
+    max-height: 10%;
+}
+
+div.searchitem {
+    text-align: center;
+    width: 8.33333333%;
+    float: left;
+}
+
+.searchitem a:hover{
+    text-decoration: none;
+}
+
+.mcontent {
+    display: block;
+    color: black;
+    margin: 5px;
+}

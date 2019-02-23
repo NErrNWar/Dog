@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> 
+    
+    <style>
+    </style>
+    
+</head>
+
+    
+    
+<body>
+    <div class="search">
+        <div class="input-group">
+            <form action="toSearchAction.action">
+               <input type="text" name="keyword" class="from-control searchbox" style="float: left;"/>
+                  <span class="input-group-btn">
+                      <button type="submit" class="btn btn-info" style="height: 34px;">
+                         <i class="fas fa-search" style="background-color: transparent;"></i>
+                      </button>
+                  </span>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchscroll" class="div-srcoll" style="opacity: 1;">
+        <div class="searchinf" >
+            <p><strong>享你所想</strong><em class="fas fa-heartbeat" style="color: red"></em></p>
+        </div>
+        <div class="input-group search-scroll">
+            <form action="toSearchAction">
+              <input type="text" name="keyword" class="from-control searchbox-scroll" style="float: left;">
+                <span class="input-group-btn" style="">
+                   <button type="submit" class="btn btn-info searchbtn-scroll">
+                       <i class="fas fa-search fa-spin" style="background-color: transparent;"></i>
+                   </button>
+                </span>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        (function(){
+            $(window).scroll(function(){
+                var top=$(this).scrollTop();
+                var sel=$("#searchscroll");
+                if(top-80<0){
+                    sel.css("display","none");
+                }
+                else{
+                    sel.css("display","block");
+                }
+            })
+        })();
+    </script>
+</body>
+</html>

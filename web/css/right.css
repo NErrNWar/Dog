@@ -1,0 +1,22 @@
+div.mright {
+    position: fixed;
+    top: 15%;
+    right: 5px;
+    background-color: rgba(118, 116, 116, 0.44);
+    width: 20px;
+    height: 70%;
+    text-align: center;
+}
+
+div.rbasic{
+    margin-top: 10px;
+}
+
+div.rborder{
+    border-bottom: 1px dotted grey;
+    margin-top: 10px;
+}
+a.abasic{
+    text-decoration: none;
+    display: block;
+}

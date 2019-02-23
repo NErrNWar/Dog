@@ -1,0 +1,275 @@
+.imgdel {
+    height: 450px;
+    width: 350px;
+}
+
+.bigimg {
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+}
+
+.smimgbox {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.smallimg {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #E4E4E4;
+    margin: 7px;
+}
+
+.infbox {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.protitle {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.prosubtitle {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.activebox {
+    background-image: url(../images/seckilling.png);
+    color: white;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.activetext {
+    padding-left: 5px;
+
+}
+
+.pricebox {
+    background-image: url(../images/priceBackground.png);
+}
+
+.originalprice {
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+.promoteprice {
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.originalprice_des {
+    color: #999999;
+    display: inline-block;
+    width: 68px;
+}
+
+.originalprice_yuan {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.originalprice_price {
+    font-family: Arial;
+    font-size: 12px;
+    color: #333333;
+    text-decoration: line-through;
+}
+
+.promoteprice_des {
+    color: #999999;
+    display: inline-block;
+    width: 68px;
+    position: relative;
+    left: 0px;
+    top: -10px;
+}
+
+.promoteprice_yuan {
+    font-family: Arial;
+    font-size: 18px;
+    color: #C40000;
+}
+
+.promoteprice_price {
+    color: #c40000;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.detialbox {
+    margin: 20px 0px;
+    border-top-style: dotted;
+    border-top-color: #C9C9C9;
+    border-top-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #C9C9C9;
+    border-bottom-width: 1px;
+    padding: 10px;
+}
+
+.detial_nu {
+    float: left;
+    width: 50%;
+    border-right: 1px dotted #c9c9c9;
+    text-align: center;
+}
+
+.detial_re {
+    text-align: center;
+}
+
+.redword {
+    color: #c40000;
+    font-weight: bold;
+}
+
+.pronum {
+    color: #999999;
+}
+
+.pronuminput {
+    height: 30px;
+    width: 45px;
+    text-align: center;
+    display: inline-block;
+}
+
+span.arrow {
+    display: inline-block;
+    width: 22px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.arrow a{
+    display: block;
+    text-decoration: none;
+}
+
+span.downup {
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 14px;
+    border: 1px solid #999;
+    font-size: 12px;
+}
+
+span.prnu{
+    color: black;
+}
+
+.servicebox{
+    margin: 20px 0px;
+    color: #999;
+}
+
+.addcart{
+    margin: 20px 0px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.detailimg{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.props {
+    margin: 5% 10%;
+}
+
+.productt{
+    height: auto;
+}
+
+.productparambox {
+    padding: 30px;
+    border: 1px solid gray;
+    height: auto;
+}
+
+.productparam {
+    color: #999999;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.paramdetail {
+    padding: 5px;
+    height: 250px;
+}
+
+.paramdetail span {
+    display: block;
+    width: 280px;
+    float: left;
+    padding: 8px 0px;
+    color: #666666;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 32px;
+}
+
+.addtofavorite{
+    margin: 20px 0px;
+    background-color: rgba(195, 1, 1, 0.51);
+    color: black;
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+a.favorite{
+    color: black;
+    display: block;
+    padding-top: 6px;
+}
+
+.proreviewitem {
+    border-bottom: 1px solid gray;
+    margin: 10px 0px;
+}
+
+.review {
+    width: 80%;
+    display: inline-block;
+    color: #333333;
+    height: 94px;
+    margin: 5px 20px;
+    float: left;
+}
+
+.reviewcontent {}
+
+.reviewtime {
+    color: gray;
+}
+
+.reviewuser {
+    color: #404040;
+    margin: 5px 20px;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.buynow{
+    width: 115px;
+}
+
